@@ -1,0 +1,164 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7fbff;
+    color: #08306b;
+}
+
+/* Navigation */
+header {
+    background: #08306b;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.nav-links a:hover {
+    background: #575757;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.home-img img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.home-content {
+    margin-left: 5px;
+}
+
+.home-content h1 {
+    font-size: 2rem;
+}
+
+.home-content p {
+    margin-top: 8px;
+}
+
+/* About Section */
+.section-about {
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Skills Section */
+.section-skills {
+    padding: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background: #e2e2e2;
+    border-radius: 5px;
+}
+
+.skill-bar {
+    background: #ccc;
+    border-radius: 5px;
+    height: 10px;
+    margin: 5px 0;
+}
+
+.skill-progress {
+    background: #333;
+    height: 100%;
+}
+
+/* SOCIAL MEDIA ICONS */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.social-icons a {
+    color: #2563eb;
+    font-size: 2.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #1e40af;
+    transform: translateY(-5px);
+}
+
+/* RESPONSIVE DESIGN */
+     @media (max-width: 768px) {
+.timeline::before {
+    left: 40px;
+ }
+            
+.timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 20px;
+    text-align: left !important;
+}
+            
+.timeline-item:nth-child(even) {
+    left: 0;
+}
+            
+.timeline-item::after {
+    left: 20px;
+}
+
+.social-icons {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+            
+.social-icons a {
+    font-size: 1.8rem;
+}
